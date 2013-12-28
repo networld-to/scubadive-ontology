@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+        xml:base="http://scubadive.networld.to/diver/example-profiles.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+        <dive:DiverProfile rdf:ID="myselfProfile">
+                <dive:hasCertification rdf:resource="http://scubadive.networld.to/padi.rdf#AOW" />
+                <dive:hasEquipment rdf:resource="#myfins" />
+                <rdfs:seeAlso rdf:resource="http://devnull.networld.to/foaf.rdf#me" />
+        </dive:DiverProfile>
+
+        <dive:DiverProfile rdf:ID="buddy1Profile">
+                <dive:hasCertification rdf:resource="http://scubadive.networld.to/padi.rdf#AOW" />
+        </dive:DiverProfile>
+
+        <dive:Equipment rdf:ID="myfins">
+		<dive:equipmentType rdf:resource="http://scubadive.networld.to/equipment.rdf#fins" />
+                <dive:equipmentType>Fins</dive:equipmentType>
+                <dive:equipmentBrand>Some Brand</dive:equipmentBrand>
+                <dive:equipmentColor>black</dive:equipmentColor>
+        </dive:Equipment>
+
+</rdf:RDF>

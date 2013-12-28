@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+        xml:base="http://scubadive.networld.to/padi.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+        <dive:Certification rdf:ID="None">
+		<dc:title>No Certification yet</dc:title>
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="SD">
+		<dc:title>PADI Scuba Diver</dc:title>
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="OW">
+		<dc:title>Open Water Diver</dc:title>
+                <rdfs:seeAlso rdf:resource="http://dbpedia.org/data/Open_Water_Diver.rdf" />
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="AOW">
+		<dc:title>Advanced Open Water Diver</dc:title>
+                <rdfs:seeAlso rdf:resource="http://dbpedia.org/data/Advanced_Open_Water_Diver.rdf" />
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="Rescue">
+		<dc:title>Rescue Diver</dc:title>
+                <rdfs:seeAlso rdf:resource="http://dbpedia.org/data/Rescue_Diver.rdf" />
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="MSD">
+		<dc:title>Master Scuba Diver</dc:title>
+                <rdfs:seeAlso rdf:resource="http://dbpedia.org/data/Master_Scuba_Diver.rdf" />
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="Divemaster">
+		<dc:title>Divemaster</dc:title>
+                <rdfs:seeAlso rdf:resource="http://dbpedia.org/data/Divemaster.rdf" />
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="OWSI">
+		<dc:title>Open Water Scuba Instructor</dc:title>
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="AI">
+		<dc:title>Assistent Instructor</dc:title>
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="MSDT">
+		<dc:title>Master Scuba Diver Trainer</dc:title>
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="IDCSI">
+		<dc:title>IDC Staff Instructor</dc:title>
+        </dive:Certification>
+
+        <dive:Certification rdf:ID="CD">
+		<dc:title>Course Director</dc:title>
+        </dive:Certification>
+
+</rdf:RDF>

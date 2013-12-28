@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+	xml:base="http://scubadive.networld.to/dives/example-thailand_2007.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+        xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+        <dive:DiveCollection rdf:about="http://scubadive.networld.to/dives/example-thailand_2007.rdf">
+		<dive:country rdf:resource="http://www4.wiwiss.fu-berlin.de/factbook/data/Thailand" />
+                <dive:divebase>Easy Divers (Koh-Nangjuan)</dive:divebase>
+                <dive:startDate>2007-07-25</dive:startDate>
+                <dive:stopDate>2007-07-25</dive:stopDate>
+                <dive:diver rdf:resource="http://devnull.networld.to/foaf.rdf#me" />
+                <dive:dive rdf:resource="http://scubadive.networld.to/dives/example-dive-detailed.rdf" />
+        </dive:DiveCollection>
+
+</rdf:RDF>

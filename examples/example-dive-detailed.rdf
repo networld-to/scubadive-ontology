@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+        xml:base="http://scubadive.networld.to/dives/example-dive2.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+        <dive:Dive rdf:ID="example-dive-detailed">
+                <dive:id>1</dive:id>
+                <dive:diver rdf:resource="#myself" />
+                <dive:name>Open Water Dive 1</dive:name>
+                <dive:date>2007-07-25</dive:date>
+                <dive:activity>Open Water Course</dive:activity>
+                <dive:divesite>Twins</dive:divesite>
+                <dive:country rdf:resource="http://www4.wiwiss.fu-berlin.de/factbook/data/Thailand" />
+                <dive:location>Koh Nangjuan</dive:location>
+                <dive:divebase>Easy Divers (Koh-Nangjuan)</dive:divebase>
+                <geo:Point rdf:parseType="Resource">
+                        <geo:lat>99.813627</geo:lat>
+                        <geo:long>10.11946</geo:long>
+                </geo:Point>
+                <dive:partner rdf:resource="#buddy1" />
+                <dive:partner rdf:resource="#diveinstructor" />
+                <dive:entrancetype>Shore</dive:entrancetype>
+                <dive:watertype>Salt</dive:watertype>
+                <dive:weight>8</dive:weight>
+                <dive:exposureprotection>Shorty</dive:exposureprotection>
+                <dive:timein>10:20</dive:timein>
+                <dive:timeout>10:58</dive:timeout>
+                <dive:scubatankmax>200</dive:scubatankmax>
+                <dive:scubatankin>125</dive:scubatankin>
+                <dive:scubatankout>20</dive:scubatankout>
+                <dive:maxdepth>12</dive:maxdepth>
+                <dive:bottomtime>38</dive:bottomtime>
+		<dive:seeDiveProfile rdf:resource="detailed_profile.rdf#diveProfile1"/>
+                <dive:comment>The first dive I"ve ever made. Very nice! We have also made the basic training exercises.</dive:comment>
+                <geo:image rdf:resource="/sat_pic/koh_nangyuan.jpg" />
+        </dive:Dive>
+
+        <dive:Diver rdf:ID="myself">
+                <dive:currentCertification rdf:resource="http://scubadive.networld.to/padi.rdf#None" />
+                <dive:totalDivesUntilNow>1</dive:totalDivesUntilNow> 
+                <dive:usedEquipment rdf:resource="#myfins" />
+                <dive:usedEquipment rdf:resource="#mask" />
+                <dive:seeDiverProfile rdf:resource="http://scubadive.networld.to/diver/example-profiles.rdf#myselfProfile" />
+        </dive:Diver>
+
+        <dive:Diver rdf:ID="buddy1">
+                <dive:currentCertification rdf:resource="http://scubadive.networld.to/padi.rdf#None" />
+                <dive:role>Buddy</dive:role>
+                <foaf:name>Jack Smith</foaf:name>
+                <dive:seeDiverProfile rdf:resource="http://scubadive.networld.to/diver/example-profiles.rdf#buddy1Profile" />
+        </dive:Diver>
+
+        <dive:Diver rdf:ID="diveinstructor">
+                <dive:currentCertification rdf:resource="http://scubadive.networld.to/padi.rdf#OWSI" />
+                <dive:role>Dive Instructor</dive:role>
+                <foaf:name>John Doe</foaf:name>
+                <dive:org>PADI</dive:org>
+                <dive:certnr>123456</dive:certnr>
+                <rdfs:seeAlso rdf:resource="http://example.org/foaf.rdf" />
+        </dive:Diver>
+
+        <dive:Equipment rdf:ID="mask">
+                <dive:equipmentType>Mask</dive:equipmentType>
+                <dive:equipmentBrand>Some Brand</dive:equipmentBrand>
+                <dive:equipmentColor>blue</dive:equipmentColor>
+        </dive:Equipment>
+
+</rdf:RDF>

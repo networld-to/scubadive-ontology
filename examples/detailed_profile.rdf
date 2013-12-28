@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+        xml:base="http://scubadive.networld.to/diver/example-profiles.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+        <dive:DiveProfile rdf:ID="diveProfile1">
+		<dive:hasSample>
+			<dive:Sample>
+				<!-- in seconds -->
+				<dive:sampleTime>60</dive:sampleTime>
+				<!-- in meter -->
+				<dive:depth>10</dive:depth>
+				<!-- in bar -->
+				<dive:pressure>203</dive:pressure>
+				<!-- in degree celsius -->
+				<dive:temperature>21</dive:temperature>
+			</dive:Sample>
+			<dive:Sample>
+				<dive:sampleTime>160</dive:sampleTime>
+				<dive:depth>22</dive:depth>
+				<dive:pressure>290</dive:pressure>
+				<dive:temperature>20</dive:temperature>
+			</dive:Sample>
+			<!-- more samples as above... -->
+		</dive:hasSample>
+        </dive:DiveProfile>
+
+</rdf:RDF>

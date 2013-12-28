@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+        xml:base="http://scubadive.networld.to/airmix.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+	<dive:AirMixProfile rdf:ID="Air">
+		<dc:title>Air</dc:title>
+		<dive:oxygen>21</dive:oxygen>
+		<dive:nitrogen>79</dive:nitrogen>
+	</dive:AirMixProfile>
+
+	<dive:AirMixProfile rdf:ID="Nitrox-1">
+		<dc:title>Nitrox - Variant 1</dc:title>
+		<dive:oxygen>32</dive:oxygen>
+		<dive:nitrogen>68</dive:nitrogen>
+	</dive:AirMixProfile>
+
+	<dive:AirMixProfile rdf:ID="Nitrox-2">
+		<dc:title>Nitrox - Variant 2</dc:title>
+		<dive:oxygen>36</dive:oxygen>
+		<dive:nitrogen>64</dive:nitrogen>
+	</dive:AirMixProfile>
+
+</rdf:RDF>

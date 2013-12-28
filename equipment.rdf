@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+        xml:lang="en"
+        xml:base="http://scubadive.networld.to/equipment.rdf"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:dive="http://scubadive.networld.to/dive.rdf#">
+
+        <dive:EquipmentType rdf:ID="mask">
+		<dc:title>Mask</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="snorkel">
+		<dc:title>Snorkel</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="fins">
+		<dc:title>Fins</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="wetSuit">
+		<dc:title>Wet Suit</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="regulator">
+		<dc:title>Regulator</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="firstStage">
+		<dc:title>First Stage</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="secondStage">
+		<dc:title>Second Stage</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="octobus">
+		<dc:title>Octobus</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="depthGauge">
+		<dc:title>Depth Gauge</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="spg">
+		<dc:title>SPG</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="compass">
+		<dc:title>Compass</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="bcd">
+		<dc:title>BCD</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="diveComputer">
+		<dc:title>Dive Computer</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="diveLight">
+		<dc:title>Dive Light</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="diveKnife">
+		<dc:title>Dive Knife</dc:title>
+        </dive:EquipmentType>
+
+        <dive:EquipmentType rdf:ID="gearBag">
+		<dc:title>Gear Bag</dc:title>
+        </dive:EquipmentType>
+
+</rdf:RDF>
