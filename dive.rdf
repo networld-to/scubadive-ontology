@@ -9,8 +9,8 @@
 
         <owl:Ontology rdf:about="http://scubadive.networld.to/dive.rdf#">
                 <dc:title>Scuba Dive Ontology Namespace</dc:title>
-                <owl:versionInfo>Revision: 2011-01-02</owl:versionInfo>
-                <dc:creator rdf:resource="http://devnull.networld.to/foaf.rdf#me" />
+                <owl:versionInfo>Revision: 2017-10-26</owl:versionInfo>
+                <dc:creator rdf:resource="www.alex-oberhauser.com/foaf.rdf#me" />
                 <rdfs:seeAlso rdf:resource="http://scubadive.networld.to/" />
         </owl:Ontology>
 
@@ -96,392 +96,392 @@
                 <vs:term_status>testing</vs:term_status>
         </rdfs:Class>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#airMix">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#airMix">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>airMix</rdfs:label>
                 <rdfs:comment>A link to a AirMixProfile that defines the air mixture during the dive.</rdfs:comment>
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#AirMixProfile" />
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Diver" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#oxygen">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#oxygen">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>oxygen</rdfs:label>
                 <rdfs:comment>The oxygen in percent.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#AirMixProfile" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#nitrogen">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#nitrogen">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>nitrogen</rdfs:label>
                 <rdfs:comment>The nitrogen in percent.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#AirMixProfile" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#helium">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#helium">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>helium</rdfs:label>
                 <rdfs:comment>The helium in percent.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#AirMixProfile" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#hasEquipment">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#hasEquipment">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>hasEquipment</rdfs:label>
                 <rdfs:comment>Links to an equipment block that is owned by a diver.</rdfs:comment>
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#DiverProfile" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#usedEquipment">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#usedEquipment">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>usedEquipment</rdfs:label>
                 <rdfs:comment>Links to an equipment block that was used in this special dive.</rdfs:comment>
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Diver" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentType">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentType">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>equipmentType</rdfs:label>
                 <rdfs:comment>What type is this equipment. (For example: fins, mask, compressed air bottle)</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentColor">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentColor">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>equipmentColor</rdfs:label>
                 <rdfs:comment>What color has this equipment.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentBrand">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentBrand">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>equipmentBrand</rdfs:label>
                 <rdfs:comment>What brand has this equipment.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentModel">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentModel">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>equipmentModel</rdfs:label>
                 <rdfs:comment>What model is this equipment.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentSerialnumber">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#equipmentSerialnumber">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>equipmentSerialnumber</rdfs:label>
                 <rdfs:comment>What serial number has this equipment.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Equipment" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#seeDiverProfile">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#seeDiverProfile">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>seeDiverProfile</rdfs:label>
                 <rdfs:comment>Links to a the profile of this diver. Must be a block of the type DiverProfile</rdfs:comment>
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#Diver" />
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#DiverProfile" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#dive">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#dive">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>dive</rdfs:label>
                 <rdfs:comment>Could be used to link to the single dives. Used in DiveCollection.</rdfs:comment>
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#Dive" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#role">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#role">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>role</rdfs:label>
                 <rdfs:comment>The role during the dive. (For example: Buddy, Dive Instructor, ...)</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#totalDives">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#totalDives">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>totalDives</rdfs:label>
                 <rdfs:comment>Defines the total of dives that are made by a diver.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#DiverProfile" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#totalDivesUntilNow">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#totalDivesUntilNow">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>totalDivesUntilNow</rdfs:label>
                 <rdfs:comment>Defines the dives that are made until this special dive.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Diver" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#hasCertification">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#hasCertification">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>hasCertification</rdfs:label>
                 <rdfs:comment>Links to a certificate block.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#DiverProfile" />
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#Certification" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#currentCertification">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#currentCertification">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>currentCertification</rdfs:label>
                 <rdfs:comment>Links to a certificate block that was valid at the point on which the dive was made</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Diver" />
                 <rdfs:range rdf:resource="http://scubadive.networld.to/dive.rdf#Certification" />
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#id">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#id">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>id</rdfs:label>
                 <rdfs:comment>Defines the number of dives begining from 1 and counting</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#diver">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#diver">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>diver</rdfs:label>
                 <rdfs:comment>Who has made this dive. Important for the other datas. Should link to a FOAF file.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#certnr">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#certnr">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#uid" />
                 <rdfs:label>certnr</rdfs:label>
                 <rdfs:comment>Defines the certification number, that each diver has.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#certdate">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#certdate">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>certdate</rdfs:label>
                 <rdfs:comment>Defines when the certification was accomplished.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#certorg">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#certorg">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>certorg</rdfs:label>
                 <rdfs:comment>Defines the organistation that has issued the certification. (For example: PADI)</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#name">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#name">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>name</rdfs:label>
                 <rdfs:comment>Defines a name of dive which suites best, but should be short</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#date">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#date">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>date</rdfs:label>
                 <rdfs:comment>Defines a date on which the dive has taken place. Must be in the following form: 2010-01-01</rdfs:comment>
                 <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#startDate">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#startDate">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>startDate</rdfs:label>
                 <rdfs:comment>Used in DiveCollection. When the first dive has taken place.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#DiveCollection"/>
                 <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#stopDate">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#stopDate">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>stopDate</rdfs:label>
                 <rdfs:comment>Used in DiveCollection. When the last dive has taken place.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#DiveCollection"/>
                 <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#activity">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#activity">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>activity</rdfs:label>
                 <rdfs:comment>What purpose had the dive.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#divesite">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#divesite">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>divesite</rdfs:label>
                 <rdfs:comment>The name of the divesite.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#country">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#country">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>country</rdfs:label>
                 <rdfs:comment>The name of the country.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#location">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#location">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>location</rdfs:label>
                 <rdfs:comment>The location where the divesite is located.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#divebase">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#divebase">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>divebase</rdfs:label>
                 <rdfs:comment>The divebase from where the dive was organised.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#location">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#location">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>location</rdfs:label>
                 <rdfs:comment>The location where the divesite is located.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#partner">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#partner">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>partner</rdfs:label>
                 <rdfs:comment>The partners on this dive.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#entrancetype">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#entrancetype">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>entrancetype</rdfs:label>
                 <rdfs:comment>How you reach the divepoint? For example: Boat or Shore</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#watertype">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#watertype">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>watertype</rdfs:label>
                 <rdfs:comment>The water type: Salt or Fresh</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#weight">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#weight">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>weight</rdfs:label>
                 <rdfs:comment>The weight of the balance weight in kilogram.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#exposureprotection">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#exposureprotection">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>exposureprotection</rdfs:label>
                 <rdfs:comment>What exposure protection you wear.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#timein">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#timein">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>timein</rdfs:label>
                 <rdfs:comment>The time when you started your dive. Format example: 13:40</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Dive"/>
                 <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#timeout">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#timeout">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>timeout</rdfs:label>
                 <rdfs:comment>The time when you finished your dive. Format example: 14:02</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Dive"/>
                 <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#scubatankmax">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#scubatankmax">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>scubatankmax</rdfs:label>
                 <rdfs:comment>The maximum capacity of the scuba tank.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#scubatankin">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#scubatankin">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>scubatankin</rdfs:label>
                 <rdfs:comment>The capacity of the scuba tank when you started your dive.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Dive"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#scubatankout">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#scubatankout">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>scubatankout</rdfs:label>
                 <rdfs:comment>The capacity of the scuba tank when you finished your dive.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Dive"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#maxdeep">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#maxdeep">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>maxdeep</rdfs:label>
                 <rdfs:comment>The maximum deep of your dive.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Dive"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#bottomtime">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#bottomtime">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>bottomtime</rdfs:label>
                 <rdfs:comment>The time underwater.</rdfs:comment>
                 <rdfs:domain rdf:resource="http://scubadive.networld.to/dive.rdf#Dive"/>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#comment">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#comment">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>comment</rdfs:label>
                 <rdfs:comment>A description of the dive.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#airTemperature">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#airTemperature">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>airTemperature</rdfs:label>
                 <rdfs:comment>Describes the air temperature.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#surfaceTemperature">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#surfaceTemperature">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>surfaceTemperature</rdfs:label>
                 <rdfs:comment>Describes the surface temperature in the water.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property rdf:about="http://scubadive.networld.to/dive.rdf#bottomTemperature">
+        <rdf:Property rdf:about="http://scubadive.networld.to/dive.rdf#bottomTemperature">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>bottomTemperature</rdfs:label>
                 <rdfs:comment>Describes the bottom temperature in the water.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
-        <rdfs:Property
+        <rdf:Property
                 rdf:about="http://scubadive.networld.to/dive.rdf#safetyStopDuration">
                 <rdfs:isDefinedBy rdf:resource="http://scubadive.networld.to/dive.rdf" />
                 <rdfs:label>safetyStopDuration</rdfs:label>
                 <rdfs:comment>Describes how long the safety stop took place. Usually at 5 meters.</rdfs:comment>
                 <vs:term_status>testing</vs:term_status>
-        </rdfs:Property>
+        </rdf:Property>
 
 </rdf:RDF>
